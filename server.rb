@@ -4,7 +4,7 @@ host = 'localhost'
 port = 2000
 
 server = TCPServer.open(host, port)                 # Socket to listen to defined host and port
-puts "Server started..."                            # Output to stdout that server started
+puts "Server started on #{host}:#{port} ..."        # Output to stdout that server started
 
 loop do                                             # Server runs forever
   client = server.accept                            # Wait for a client to connect. Accept returns a TCPSocket
