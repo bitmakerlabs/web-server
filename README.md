@@ -10,3 +10,7 @@ More specifically, the TCPServer and TCPSocket objects.
 2. To connect to your server, open your browser to [http://localhost:2000](http://localhost:2000)
 
 3. See what happens in your terminal and in browser.
+
+## Assignment
+
+The assignment is available in the wiki [https://github.com/bitmakerlabs/web-server/wiki/Web-Server-Assignment](https://github.com/bitmakerlabs/web-server/wiki/Web-Server-Assignment)
