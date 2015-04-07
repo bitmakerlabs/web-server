@@ -10,8 +10,8 @@ loop do                                             # Server runs forever
   client = server.accept                            # Wait for a client to connect. Accept returns a TCPSocket
 
   lines = []
-  while (line = client.gets.chomp) && !line.empty?  # Read the request and collect it until it's empty
-    lines << line
+  while (line = client.gets) && !line.chomp.empty?  # Read the request and collect it until it's empty
+    lines << line.chomp
   end
   puts lines                                        # Output the full request to stdout
 
