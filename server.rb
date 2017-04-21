@@ -15,6 +15,11 @@ loop do                                             # Server runs forever
   end
   puts lines                                        # Output the full request to stdout
 
-  client.puts(Time.now.ctime)                       # Output the current time to the client
+  header = "HTTP/1.1 200 OK"
+  time = Time.now.ctime
+  response = "#{header}\r\n\r\n#{time}"       # Output the HTTP header with current time to the client
+
+  client.puts(response)
+
   client.close                                      # Disconnect from the client
 end
